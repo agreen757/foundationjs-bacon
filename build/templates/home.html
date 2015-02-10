@@ -1,0 +1,37 @@
+<center>
+    <h1>Baconator</h1>
+    <p class="lead">By Adrian Green <strong>using 1.0.2 Matterhorn</strong>.</p>
+</center>
+
+<div id="bacons" ng-repeat="elem in elems">
+    <div id="images" class="grid-block">
+        <center><img src="http://baconmockup.com/400/300" /></center>
+    </div>
+</div>
+<div zf-panel="" id="elem3-drawer" position="left">
+  <div id="drawer-heading">
+      <a zf-close="" class="close-button">x</a>
+      <center><p id="heading-text">Bacon cuts</p></center>
+  </div>
+  <div ng-repeat="item in categories">
+    <ul>
+        <a href="#">
+        <li style="list-style-type:none">
+            <div>{{item}}</div>
+        </li> 
+        </a>
+    </ul>  
+  </div>
+</div>
+<div zf-panel="" id="search-drawer" position="right">
+    <div id="drawer-heading">
+        <a zf-close="" class="close-button">x</a>
+        <center>
+            <p id="heading-text">Search bacon</p>
+        </center>
+    </div>
+    <div>
+        <center><input placeholder="Search bacon"></center>
+    </div>
+</div>
+
